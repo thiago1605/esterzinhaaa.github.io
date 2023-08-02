@@ -1,0 +1,272 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #cdcbcb;
+    background: no-repeat fixed url("w2.png");
+    background-size: cover;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  
+  .slider {
+    width: 600px; /* Defina o tamanho desejado para o slider */
+    overflow: hidden;
+    box-shadow: 0px 0 10px .1px #696868;
+    border-radius: 10px;
+  }
+
+  h3 {
+    background: #ed9112;
+    margin-top: 0;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0px 14px 6px 14px;
+    text-indent: 15px;
+  }  
+
+  ul li {
+    background-color: #c0bebe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px 0px 0 0;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  li span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ed9112;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+  }
+  
+  .days-container {
+    display: flex;
+    transition: transform 0.3s ease; /* Adicione a transição para criar o efeito de deslizamento */
+  }
+  
+  .day-div {
+    flex: 0 0 600px;
+    width:600px; /* Defina a largura das divs, que é igual ao tamanho do slider */
+    display: block;
+    background-color: lightgray;
+    font-size: 15px;
+    font-weight: light;
+  }
+  
+  .show {
+    background-color: lightblue; /* Cor de destaque para a div atual */
+  }
+  
+  .day-indicator {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .day-indicator span {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .day-indicator span.current {
+    color: #ed9112; /* Cor de destaque para a sigla do dia atual */
+  }
+
+  #quarta img {
+    width: 40%;
+   }
+#quarta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (min-width: 1001px) {
+  .h3c {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+footer {
+  text-align: center;
+  background: #000;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+}
+
+footer p {
+  height: 100%;
+  text-align: center;
+}
+ 
+
+  @media (max-width: 1000px) {   
+    .slider {
+        width: 100vw;
+        height: 100vh; /* Defina o tamanho desejado para o slider */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0 10px .1px #696868;
+        border-radius: 0;
+    }
+    .second {
+      height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .days-container {
+      display: flex;
+      transition: transform 0.3s ease;/* Adicione a transição para criar o efeito de deslizamento */
+    }
+
+    .day-indicator {
+        width: 100%;
+        height: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+      }
+      
+      .day-indicator span {
+        cursor: pointer;
+        padding: 20px;
+        font-size: 40px
+      }
+
+        
+    .day-indicator span.current {
+        color: #ed9112;
+        text-shadow: 0px 0px 30px #ff6f00;
+
+         /* Cor de destaque para a sigla do dia atual */
+    }
+
+      h3 {
+        background: #ed9112;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 ;
+        font-size: 35px;
+        height: 100px;
+        position: absolute;
+        width: 100%;
+        top: 125px;
+      }
+      h3 p {
+        margin: auto 0 auto 0;
+      }
+      
+      footer {
+        position: absolute;
+        text-align: center;
+        background: #000;
+        width: 100vw;
+        height: 125px;
+        bottom: 0;
+        left: 0;
+        border-radius: 20px 20px 0 0;
+        color: #fff;
+        font-size: 40px;
+        color: #ed9112;
+        text-shadow: 0px 0px 30px #ff6f00;
+      }
+
+    .day-div {
+        flex: 0 0 100%;
+        width:100%;
+        height: 100%; /* Defina a largura das divs, que é igual ao tamanho do slider */
+        display: block;
+        background-color: lightgray;
+        font-size: 15px;
+        font-weight: bolder;
+    } 
+      
+    ul {
+        padding: 0px 0px 150px 0px;
+        list-style-type: none;
+        text-indent: 15px;
+        font-size: 30px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 230px 0 0 0;
+        height: 100%;
+        height: 100vh;
+    }  
+
+    #quarta img {
+     width: 70%;
+     margin-top: -50%;
+    }
+
+    #quarta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    ul li {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Adiciona esta propriedade para empilhar os itens verticalmente */
+        margin: 4% 0 0 0;
+        font-size: 35px;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 0px 0 10px .1px #696868;
+        width: 80%;
+    }
+
+    li span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ed9112;
+        height: 55%;
+        width: 100%;
+        border-radius: 20px;
+        color: #000;
+        text-align: center;
+    }
+
+    p{
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+  
