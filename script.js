@@ -36,5 +36,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Mostrar a div correspondente ao dia atual ao carregar a página
-  showDay(1);
+  showDay(today);
 });
